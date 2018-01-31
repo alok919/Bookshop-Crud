@@ -15,7 +15,7 @@
 		header("Location:index.php");
 	}
 	else{
-		echo "Error in insert Query";
+		echo "Error in insert Query".mysqli_error($conn);
 	}
 
 	mysqli_close($conn);
