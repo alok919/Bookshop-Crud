@@ -23,10 +23,12 @@
 
 
 		 ?>
-	<div class="container ">
-		<div class="page-header">
-		  	<h1>CRUD APP <small>WITH PHP</small></h1>
+
+		 <div class="page-header">
+		  	<h1 class="text-center">CRUD APP WITH PHP</h1>
 		</div>
+	<div class="container">
+		
 
 		<div class="row">
 			<div class="col-md-4">
@@ -68,7 +70,7 @@
 								<td><?php echo $row['book_price'] ;?></td>
 								<td>
 									<a href="update.php?id=<?php echo $row['book_id'] ;?>" class="btn btn-success" role="button">Edit Book</a>
-									<a href="delete.php" class="btn btn-success" role="button">Delete Book</a>
+									<a href="delete.php?id=<?php echo $row['book_id'] ;?>" class="btn btn-success" role="button">Delete Book</a>
 								</td>
 							</tr>
 

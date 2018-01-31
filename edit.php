@@ -15,7 +15,7 @@
 		
 		header("Location:index.php");
 	}else{
-		echo "Unsuccessfully Update data";
+		echo "Unsuccessfully Update data".mysqli_error($conn);
 	}
 
 	mysqli_close($conn);
