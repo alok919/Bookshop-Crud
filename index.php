@@ -64,10 +64,10 @@
 
 						 ?>
 							<tr>
-								<td><?php echo $row['book_title'] ?></td>
-								<td><?php echo $row['book_price'] ?></td>
+								<td><?php echo $row['book_title']; ?></td>
+								<td><?php echo $row['book_price'] ;?></td>
 								<td>
-									<a href="update.php" class="btn btn-success" role="button">Edit Book</a>
+									<a href="update.php?id=<?php echo $row['book_id'] ;?>" class="btn btn-success" role="button">Edit Book</a>
 									<a href="delete.php" class="btn btn-success" role="button">Delete Book</a>
 								</td>
 							</tr>
