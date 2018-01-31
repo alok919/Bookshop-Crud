@@ -11,7 +11,8 @@
 	$query="INSERT INTO books(book_title,book_price) VALUES('$title','$price')";
 
 	if (mysqli_query($conn,$query)) {
-		echo "Record Successful Insert in Database";
+		
+		header("Location:index.php");
 	}
 	else{
 		echo "Error in insert Query";
