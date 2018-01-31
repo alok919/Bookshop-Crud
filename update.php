@@ -31,7 +31,7 @@
 		</div>		
 		
 		
-			<form role="form">
+			<form role="form" action="edit.php" method="get">
 
 			<?php 
 
@@ -40,7 +40,7 @@
 
 			 ?>
 
-			 <input type="hidden" name="id" value="<?php echo $row['book_id']; ?>">
+			 <input type="hidden" name="bookid" value="<?php echo $row['book_id']; ?>">
 			<div class="form-group ">
 				<label>Book Title</label>
 				<input type="text" name="btitle" class="form-control" value="<?php echo $row['book_title'];  ?>">
@@ -60,6 +60,8 @@
 			<?php 
 
 					} 
+
+					mysqli_close($conn);
 
 
 			?>
