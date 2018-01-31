@@ -9,8 +9,6 @@
 
 	if (!$conn) {
 		die("Error in connect database");
-	}else{
-		echo "Connect database successful";
 	}
 
 
